@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PAES Geometría</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <img src="img/logo.png" alt="Logo">
+
+        <div>
+            <h1>PAES GEOMETRÍA</h1>
+            <p>Material de estudio para la PAES</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#temas">Temas</a>
+        <a href="#quiz" onclick="mostrarTema('quiz'); return false;">Quiz</a>
+        <a href="paginas/quienes-somos.html">Quiénes somos</a>
+        <a href="paginas/contacto.html">Contacto</a>
+    </nav>
+
+</header>
+
+
+<!-- INICIO -->
+
+<section class="hero" id="inicio">
+
+    <div class="hero-texto">
+
+        <h2>Domina la Geometría para la PAES</h2>
+
+        <p>
+            Aprende mediante ejemplos, ejercicios y material
+            especialmente preparado para estudiantes.
+        </p>
+
+        <button id="botonInicio">
+            Comenzar a estudiar
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- TEMAS -->
+
+<section class="seccion" id="temas">
+
+    <h2> Temas de Geometría</h2>
+
+    <div class="contenedor">
+
+        <div class="tarjeta" onclick="mostrarTema('triangulos')">
+
+            <h3> Triángulos</h3>
+
+            <p>
+                Tipos de triángulos, propiedades,
+                área, perímetro y Pitágoras.
+            </p>
+
+        </div>
+
+
+        <div class="tarjeta" onclick="mostrarTema('cuadrilateros')">
+
+            <h3> Cuadriláteros</h3>
+
+            <p>
+                Cuadrados, rectángulos,
+                rombos y trapecios.
+            </p>
+
+        </div>
+
+
+        <div class="tarjeta" onclick="mostrarTema('circunferencia')">
+
+            <h3> Circunferencia</h3>
+
+            <p>
+                Radio, diámetro,
+                perímetro y área.
+            </p>
+
+        </div>
+
+
+        <div class="tarjeta" onclick="mostrarTema('cuerpos')">
+
+            <h3> Cuerpos Geométricos</h3>
+
+            <p>
+                Prismas, cilindros,
+                conos y esferas.
+            </p>
+
+        </div>
+
+
+        <div class="tarjeta" onclick="mostrarTema('analitica')">
+
+            <h3> Geometría Analítica</h3>
+
+            <p>
+                Plano cartesiano,
+                pendiente y distancia.
+            </p>
+
+        </div>
+
+
+        <div class="tarjeta" onclick="mostrarTema('quiz')">
+
+            <h3> Quiz PAES</h3>
+
+            <p>
+                Pone a prueba
+                todo lo aprendido.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTENIDO DE TRIÁNGULOS -->
+
+<section class="contenido-tema" id="triangulos">
+
+    <h2> Triángulos</h2>
+
+    <h3>¿Qué es un triángulo?</h3>
+
+    <p>
+        Es un polígono formado por tres lados,
+        tres vértices y tres ángulos.
+    </p>
+
+    <h3> Tipos según sus lados</h3>
+
+    <ul>
+        <li><strong>Equilátero:</strong> tiene sus tres lados iguales.</li>
+        <li><strong>Isósceles:</strong> tiene dos lados iguales.</li>
+        <li><strong>Escaleno:</strong> todos sus lados son diferentes.</li>
+    </ul>
+
+    <h3>Tipos según sus ángulos</h3>
+
+    <ul>
+        <li><strong>Acutángulo:</strong> todos sus ángulos son menores que 90°.</li>
+        <li><strong>Rectángulo:</strong> tiene un ángulo de 90°.</li>
+        <li><strong>Obtusángulo:</strong> tiene un ángulo mayor que 90°.</li>
+    </ul>
+
+    <h3> Propiedades importantes</h3>
+
+    <ul>
+        <li>La suma de sus ángulos interiores es 180°.</li>
+        <li>El perímetro es la suma de sus tres lados.</li>
+        <li>Área = (base × altura) ÷ 2.</li>
+    </ul>
+
+    <h3> Teorema de Pitágoras</h3>
+
+    <p>
+        En un triángulo rectángulo:
+    </p>
+
+    <div class="formula">
+        a² + b² = c²
+    </div>
+
+    <p>
+        Donde <strong>c</strong> es la hipotenusa,
+        es decir, el lado opuesto al ángulo de 90°.
+    </p>
+
+    <div class="pregunta-paes">
+
+        <h3>Pregunta tipo PAES</h3>
+
+        <p><strong>Enunciado:</strong> En un triángulo rectángulo, uno de los catetos mide 6 cm
+        y la hipotenusa mide 10 cm. ¿Cuánto mide el otro cateto?</p>
+
+        <p><strong>Desarrollo:</strong></p>
+
+        <ol>
+            <li>Aplicamos el Teorema de Pitágoras: a² + b² = c²</li>
+            <li>Reemplazamos los datos: 6² + b² = 10²</li>
+            <li>Calculamos las potencias: 36 + b² = 100</li>
+            <li>Despejamos b²: b² = 100 − 36 = 64</li>
+            <li>Sacamos raíz cuadrada: b = √64 = 8</li>
+        </ol>
+
+        <p class="respuesta">Respuesta: el otro cateto mide 8 cm.</p>
+
+    </div>
+
+    <h3>Banco de ejercicios PAES</h3>
+
+    <p>
+        10 preguntas de práctica sobre triángulos, con retroalimentación
+        inmediata y resolución paso a paso.
+    </p>
+
+    <div class="banco-ejercicios" data-tema="triangulos"></div>
+
+    <button onclick="volverTemas()" style="margin-top:24px;">← Volver a temas</button>
+
+</section>
+
+
+<!-- CUADRILÁTEROS -->
+
+<section class="contenido-tema" id="cuadrilateros">
+
+    <h2> Cuadriláteros</h2>
+
+    <p>
+        Los cuadriláteros son polígonos que tienen
+        cuatro lados y cuatro ángulos.
+    </p>
+
+    <h3>Tipos principales</h3>
+
+    <ul>
+        <li><strong>Cuadrado:</strong> cuatro lados iguales y cuatro ángulos rectos.</li>
+
+        <li><strong>Rectángulo:</strong> lados opuestos iguales y cuatro ángulos rectos.</li>
+
+        <li><strong>Rombo:</strong> cuatro lados iguales.</li>
+
+        <li><strong>Trapecio:</strong> posee al menos un par de lados paralelos.</li>
+    </ul>
+
+    <h3> Propiedad</h3>
+
+    <p>
+        La suma de los ángulos interiores de un cuadrilátero es:
+    </p>
+
+    <div class="formula">
+        360°
+    </div>
+
+    <div class="pregunta-paes">
+
+        <h3>Pregunta tipo PAES</h3>
+
+        <p><strong>Enunciado:</strong> Un cuadrado tiene un lado que mide 6 cm.
+        ¿Cuánto mide su diagonal?</p>
+
+        <p><strong>Desarrollo:</strong></p>
+
+        <ol>
+            <li>La diagonal de un cuadrado divide la figura en dos triángulos rectángulos,
+            por lo que se puede usar el Teorema de Pitágoras: d² = lado² + lado²</li>
+            <li>Reemplazamos: d² = 6² + 6²</li>
+            <li>Calculamos las potencias: d² = 36 + 36 = 72</li>
+            <li>Sacamos raíz cuadrada: d = √72 = 6√2</li>
+            <li>Aproximando: d ≈ 6 × 1,41 = 8,49 cm</li>
+        </ol>
+
+        <p class="respuesta">Respuesta: la diagonal mide 6√2 cm, es decir, aproximadamente 8,49 cm.</p>
+
+    </div>
+
+    <h3>Banco de ejercicios PAES</h3>
+
+    <p>
+        10 preguntas de práctica sobre cuadriláteros, con retroalimentación
+        inmediata y resolución paso a paso.
+    </p>
+
+    <div class="banco-ejercicios" data-tema="cuadrilateros"></div>
+
+    <button onclick="volverTemas()" style="margin-top:24px;">← Volver a temas</button>
+
+</section>
+
+
+<!-- CIRCUNFERENCIA -->
+
+<section class="contenido-tema" id="circunferencia">
+
+    <h2> Circunferencia y círculo</h2>
+
+    <h3>Elementos importantes</h3>
+
+    <ul>
+        <li><strong>Radio:</strong> distancia desde el centro hasta la circunferencia.</li>
+
+        <li><strong>Diámetro:</strong> segmento que pasa por el centro.</li>
+
+        <li><strong>Diámetro = 2 × radio.</strong></li>
+    </ul>
+
+    <h3> Fórmulas</h3>
+
+    <div class="formula">
+        Perímetro = 2πr
+    </div>
+
+    <div class="formula">
+        Área = πr²
+    </div>
+
+    <div class="pregunta-paes">
+
+        <h3>Pregunta tipo PAES</h3>
+
+        <p><strong>Enunciado:</strong> Una circunferencia tiene un radio de 7 cm.
+        ¿Cuál es su perímetro y su área? (Usa π ≈ 3,14)</p>
+
+        <p><strong>Desarrollo:</strong></p>
+
+        <ol>
+            <li>Perímetro: P = 2πr = 2 × 3,14 × 7</li>
+            <li>P = 43,96 cm</li>
+            <li>Área: A = πr² = 3,14 × 7²</li>
+            <li>A = 3,14 × 49 = 153,86 cm²</li>
+        </ol>
+
+        <p class="respuesta">Respuesta: el perímetro mide 43,96 cm y el área mide 153,86 cm².</p>
+
+    </div>
+
+    <h3>Banco de ejercicios PAES</h3>
+
+    <p>
+        10 preguntas de práctica sobre circunferencia y círculo, con retroalimentación
+        inmediata y resolución paso a paso.
+    </p>
+
+    <div class="banco-ejercicios" data-tema="circunferencia"></div>
+
+    <button onclick="volverTemas()" style="margin-top:24px;">← Volver a temas</button>
+
+</section>
+
+
+<!-- CUERPOS GEOMÉTRICOS -->
+
+<section class="contenido-tema" id="cuerpos">
+
+    <h2> Cuerpos Geométricos</h2>
+
+    <p>
+        Son figuras tridimensionales que poseen largo,
+        ancho y alto.
+    </p>
+
+    <h3>Principales cuerpos</h3>
+
+    <ul>
+        <li>Prisma</li>
+        <li>Cilindro</li>
+        <li>Cono</li>
+        <li>Esfera</li>
+    </ul>
+
+    <h3> Volúmenes importantes</h3>
+
+    <div class="formula">
+        Prisma = área de la base × altura
+    </div>
+
+    <div class="formula">
+        Cilindro = πr²h
+    </div>
+
+    <div class="formula">
+        Esfera = 4/3 πr³
+    </div>
+
+    <div class="pregunta-paes">
+
+        <h3>Pregunta tipo PAES</h3>
+
+        <p><strong>Enunciado:</strong> Un cilindro tiene un radio de 3 cm y una altura de 10 cm.
+        ¿Cuál es su volumen? (Usa π ≈ 3,14)</p>
+
+        <p><strong>Desarrollo:</strong></p>
+
+        <ol>
+            <li>Usamos la fórmula del volumen del cilindro: V = πr²h</li>
+            <li>Reemplazamos: V = 3,14 × 3² × 10</li>
+            <li>Calculamos el cuadrado: V = 3,14 × 9 × 10</li>
+            <li>Multiplicamos: V = 3,14 × 90 = 282,6</li>
+        </ol>
+
+        <p class="respuesta">Respuesta: el volumen del cilindro es 282,6 cm³.</p>
+
+    </div>
+
+    <h3>Banco de ejercicios PAES</h3>
+
+    <p>
+        10 preguntas de práctica sobre cuerpos geométricos, con retroalimentación
+        inmediata y resolución paso a paso.
+    </p>
+
+    <div class="banco-ejercicios" data-tema="cuerpos"></div>
+
+    <button onclick="volverTemas()" style="margin-top:24px;">← Volver a temas</button>
+
+</section>
+
+
+<!-- GEOMETRÍA ANALÍTICA -->
+
+<section class="contenido-tema" id="analitica">
+
+    <h2> Geometría Analítica</h2>
+
+    <h3>Plano cartesiano</h3>
+
+    <p>
+        Permite representar puntos mediante coordenadas
+        (x, y).
+    </p>
+
+    <h3> Pendiente</h3>
+
+    <div class="formula">
+        m = (y₂ - y₁) / (x₂ - x₁)
+    </div>
+
+    <h3> Distancia entre dos puntos</h3>
+
+    <div class="formula">
+        d = √[(x₂-x₁)² + (y₂-y₁)²]
+    </div>
+
+    <div class="pregunta-paes">
+
+        <h3>Pregunta tipo PAES</h3>
+
+        <p><strong>Enunciado:</strong> Dados los puntos A(2, 3) y B(6, 6), calcula la pendiente
+        de la recta AB y la distancia entre ambos puntos.</p>
+
+        <p><strong>Desarrollo (pendiente):</strong></p>
+
+        <ol>
+            <li>m = (y₂ − y₁) / (x₂ − x₁)</li>
+            <li>m = (6 − 3) / (6 − 2)</li>
+            <li>m = 3/4 = 0,75</li>
+        </ol>
+
+        <p><strong>Desarrollo (distancia):</strong></p>
+
+        <ol>
+            <li>d = √[(x₂−x₁)² + (y₂−y₁)²]</li>
+            <li>d = √[(6−2)² + (6−3)²]</li>
+            <li>d = √[4² + 3²] = √[16 + 9]</li>
+            <li>d = √25 = 5</li>
+        </ol>
+
+        <p class="respuesta">Respuesta: la pendiente es 0,75 y la distancia entre A y B es 5 unidades.</p>
+
+    </div>
+
+    <h3>Banco de ejercicios PAES</h3>
+
+    <p>
+        10 preguntas de práctica sobre geometría analítica, con retroalimentación
+        inmediata y resolución paso a paso.
+    </p>
+
+    <div class="banco-ejercicios" data-tema="analitica"></div>
+
+    <button onclick="volverTemas()" style="margin-top:24px;">← Volver a temas</button>
+
+</section>
+
+
+<!-- QUIZ -->
+
+<section class="contenido-tema" id="quiz">
+
+    <h2>Quiz PAES</h2>
+
+    <p>
+        10 preguntas de geometría, una por una, para poner a prueba lo aprendido
+        en cada tema.
+    </p>
+
+    <div id="quiz-contenedor">
+
+        <p class="quiz-progreso" id="quizProgreso">Pregunta 1 de 10</p>
+
+        <p id="quizPregunta"></p>
+
+        <div id="quizOpciones"></div>
+
+        <p id="resultado"></p>
+
+        <button id="quizSiguiente" style="display:none;">Siguiente →</button>
+
+    </div>
+
+    <div id="quiz-final" style="display:none;">
+
+        <h3>Resultado final</h3>
+
+        <p id="quizPuntajeFinal"></p>
+
+        <button id="quizReiniciar">Reiniciar quiz</button>
+
+    </div>
+
+    <button onclick="volverTemas()" style="margin-top:20px;">← Volver a temas</button>
+
+</section>
+
+
+<!-- ENLACES DE INTERÉS -->
+
+<section class="seccion" id="enlaces">
+
+    <h2>Enlaces de interés</h2>
+
+    <div class="enlaces-lista">
+
+        <a href="https://demre.cl" target="_blank" rel="noopener noreferrer">DEMRE</a>
+
+        <a href="https://es.khanacademy.org/math" target="_blank" rel="noopener noreferrer">Khan Academy · Matemática</a>
+
+        <a href="https://www.curriculumnacional.cl" target="_blank" rel="noopener noreferrer">Currículum Nacional · Mineduc</a>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-institucional">
+        <img src="img/logo_institucional.png" alt="Logo institucional Liceo Carmela Carvajal de Prat" class="logo-institucional">
+        <p>Proyecto Electivo Pensamiento Computacional y Programación 2025</p>
+    </div>
+
+    <p>Proyecto Escolar PAES Geometría</p>
+       <p class="autora">E.Pérez — Liceo Carmela Carvajal
+       </p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+<script src="js/banco.js"></script>
+
+</body>
+
+</html>
